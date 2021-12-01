@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-11-29T04:38:34.878Z",
+    "end": "2021-11-29T04:38:54.435Z",
+    "duration": 19557,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e0477cb1-7298-4e3d-8239-47a82073bf8f",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/my_testcase.js",
+      "file": "cypress/integration/2-advanced-examples/my_testcase.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6d6c4c32-020f-4898-b0d5-79c1c7f5966a",
+          "title": "MyTestSuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify title of the page - Positive ",
+              "fullTitle": "MyTestSuite Verify title of the page - Positive ",
+              "timedOut": null,
+              "duration": 9318,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://demo.guru99.com/V4/');\ncy.title().should('eq', 'Guru99 Bank Home Page');",
+              "err": {},
+              "uuid": "58923104-0730-4695-856e-6e84e9579945",
+              "parentUUID": "6d6c4c32-020f-4898-b0d5-79c1c7f5966a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify title of the page - Negative ",
+              "fullTitle": "MyTestSuite Verify title of the page - Negative ",
+              "timedOut": null,
+              "duration": 6711,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\2-advanced-examples\\\\my_testcase.js\\\\MyTestSuite -- Verify title of the page - Negative (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.visit('http://demo.guru99.com/V4/');\ncy.title().should('eq', 'Guru99 Bank Home Page12');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'Guru99 Bank Home Page' to equal 'Guru99 Bank Home Page12'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'Guru99 Bank Home Page' to equal 'Guru99 Bank Home Page12'\n    at Context.eval (http://demo.guru99.com/__cypress/tests?p=cypress\\integration\\2-advanced-examples\\my_testcase.js:106:16)",
+                "diff": "- 'Guru99 Bank Home Page'\n+ 'Guru99 Bank Home Page12'\n"
+              },
+              "uuid": "4578c0cb-8bc1-4dd1-878d-efb963f3518d",
+              "parentUUID": "6d6c4c32-020f-4898-b0d5-79c1c7f5966a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "58923104-0730-4695-856e-6e84e9579945"
+          ],
+          "failures": [
+            "4578c0cb-8bc1-4dd1-878d-efb963f3518d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16029,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "charts": true,
+        "reportPageTitle": "Demo report",
+        "embeddedScreenshots": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

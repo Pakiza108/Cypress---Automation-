@@ -1,0 +1,16 @@
+{
+  "baseUrl":"https://ems.outcastsolutions.us/employees/create" ,
+
+  "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "reportPageTitle": "Demo report",
+        "embeddedScreenshots" : true
+
+        
+
+      }
+}
+
+

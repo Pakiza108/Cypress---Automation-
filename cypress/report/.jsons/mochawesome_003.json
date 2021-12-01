@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-29T04:39:28.219Z",
+    "end": "2021-11-29T04:40:03.410Z",
+    "duration": 35191,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5df0f13b-7c2a-4583-af22-dd3d70d9ca76",
+      "title": "",
+      "fullFile": "cypress/integration/Customcommands/customCommands.spec.js",
+      "file": "cypress/integration/Customcommands/customCommands.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "de73705e-d330-4f2b-ab27-dbacf3d4028e",
+          "title": "CustomeSuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "LoginTest",
+              "fullTitle": "CustomeSuite LoginTest",
+              "timedOut": null,
+              "duration": 14791,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// valid \ncy.login('admin@yourstore.com', 'admin');\ncy.title().should('be.equal', 'Dashboard / nopCommerce administration'); // Invalid \ncy.login('admin@yourstore.com', 'admin12');\ncy.title().should('be.equal', 'Your store. Login'); // valid \ncy.login('admin12@yourstore.com', 'admin');\ncy.title().should('be.equal', 'Your store. Login');",
+              "err": {},
+              "uuid": "5d87e3ce-324a-4433-a13b-8458b941e465",
+              "parentUUID": "de73705e-d330-4f2b-ab27-dbacf3d4028e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add customer",
+              "fullTitle": "CustomeSuite Add customer",
+              "timedOut": null,
+              "duration": 5181,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('admin@yourstore.com', 'admin'); // Script for adding new customer",
+              "err": {},
+              "uuid": "daffde3a-c8d8-46a4-9135-23878dac8de9",
+              "parentUUID": "de73705e-d330-4f2b-ab27-dbacf3d4028e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit customer",
+              "fullTitle": "CustomeSuite Edit customer",
+              "timedOut": null,
+              "duration": 7316,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('admin@yourstore.com', 'admin'); // Script for Edit new customer \ncy.log('editing customer ..................');",
+              "err": {},
+              "uuid": "2f4d547a-f5f7-40db-8534-1b007d631be2",
+              "parentUUID": "de73705e-d330-4f2b-ab27-dbacf3d4028e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5d87e3ce-324a-4433-a13b-8458b941e465",
+            "daffde3a-c8d8-46a4-9135-23878dac8de9",
+            "2f4d547a-f5f7-40db-8534-1b007d631be2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27288,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "charts": true,
+        "reportPageTitle": "Demo report",
+        "embeddedScreenshots": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
